@@ -1,3 +1,28 @@
+@keyframes moveOut {
+    from {
+        left:0%;
+        
+    } to {
+        left:175%;
+        
+    }
+}
+@keyframes moveIn {
+    from {
+        left:-175%;
+        
+    } to {
+        left:0%;
+        
+    }
+}
+@keyframes bounce {
+    from {
+        left:0%;
+    } to {
+        left:100%;
+    }
+}
 body {
     font-family: 'Courier New', Courier, monospace;
     overflow:hidden;
@@ -12,9 +37,9 @@ body {
     scroll-snap-type: y mandatory;
 }
 .content section {
-    display: fles;
+    display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     width:100%;
@@ -35,20 +60,74 @@ body {
 }
 .textbackground{
     height:100%;
-    width:50%;
-    margin:auto;
+    width:33.3%;
+    margin:0;
     background-color:rgba(0, 0, 0, 0.3);
     border-left: goldenrod 3px solid;
     border-right: goldenrod 3px solid;
-    z-index: -1;
 }
 .textbox {
     color: black;
-    -webkit-text-fill-color: black; 
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: white;
     opacity:100%;
-    z-index:0;
     font-size: larger;
     align-items: center;
+}
+.textbox p { 
+    margin-left: 5em;
+    margin-right: 5em;
+    font-size: medium;
+    text-align: left;
+}
+.textbox h1 {
+    font-family: 'Permanent Marker';
+}
+.textbox li {
+    text-align: left;
+}
+
+.imageContainer {
+    width:33.3%;
+    height:100%;
+    display:flex;
+    align-items: right;
+    justify-content: right;
+}
+.imageContainer img {
+    border: goldenrod 5px solid;
+    opacity: 50%;
+    margin:auto;
+    animation: moveIn 3s linear;
+    position:relative;
+}
+
+#startFixedImage {
+    width:604px;
+    height:264px;
+    position:fixed;
+    top: 0%;
+    background-image:url('Images/clouds.gif');
+    animation: 9s ease-in-out 1s infinite alternate bounce;
+    z-index:100;
+}
+
+#middleFixedImage {
+    width:100vw;
+    height:248px;
+    position:fixed;
+    bottom: 0%;
+    background-image:url('Images/hell.png');
+    animation: moveIn 3s linear;
+    z-index:100;
+
+}
+
+#endFixedImage {
+    width:100vw;
+    height:80px;
+    position:fixed;
+    bottom: 0%;
+    background-image:url('Images/city.png');
+    animation: moveIn 3s linear;
+    z-index:100;
+    
 }
