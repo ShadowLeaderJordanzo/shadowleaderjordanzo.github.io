@@ -69,7 +69,7 @@ body {
 .textbox {
     color: black;
     opacity:100%;
-    font-size: larger;
+    font-size: large;
     align-items: center;
     text-shadow: 0 0 black;
 }
