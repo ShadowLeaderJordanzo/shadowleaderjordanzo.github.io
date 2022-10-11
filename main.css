@@ -73,7 +73,7 @@ body {
 }
 
 .textbox {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin: auto;
     opacity:100%;
     font-size: large;
@@ -81,7 +81,7 @@ body {
     /* align-items: center; */
     /* align-self: center; */
     /* align-content: center; */
-    text-shadow: 8px 5px 3px goldenrod;
+    text-shadow: 8px 5px 3px white;
 }
 .textbox p { 
     margin-left: 5em;
