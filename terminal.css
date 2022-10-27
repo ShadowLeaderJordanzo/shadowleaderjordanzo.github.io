@@ -84,8 +84,8 @@ h4 b {
   color: white;
 }
 a {
-	color: white;	
-	text-decoration: none;	
+	color: #ffd400;
+	text-decoration: none;
 }
 
 a:hover {
@@ -105,14 +105,14 @@ ul {
 
 ul a:before,
 p a:before {
-	color: #00dd00;
+	color: #fbfbfb;
 	content: ' [ ';
 }
 
 ul a:after,
 p a:after {
-	color: #00dd00;
-	content: ' ] ';	
+	color: #fbfbfb;
+	content: ' ] ';
 }
 
 header.site {
@@ -153,10 +153,10 @@ nav.site ul li {
 	display: block;
 	pointer-events: none;
 	position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+	top: 11vh;
+	right: 11.8vw;
+	bottom: 11.8vh;
+	left: 11.8vw;
 	z-index: 2;
 }
 	
@@ -167,10 +167,10 @@ nav.site ul li {
 	display: block;
 	pointer-events: none;
 	position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+	top: 11vh;
+	right: 11.5vw;
+	bottom: 12vh;
+	left: 12vw;
 	z-index: 2;
 }
 
@@ -305,7 +305,7 @@ a.button:hover {
 
 .upper { text-transform: uppercase; }
 #container {
-  max-width: 1024px;
+  max-width: 1599px;
   margin: auto;
 }
 
