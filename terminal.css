@@ -65,7 +65,7 @@ Mack Richardson || https://codepen.io/mackorichardson/pen/vNMRpK
 	
 html,
 body {
-	background: #383838;
+	background: black;
 	color: #00dd00;
 	font-size: 64.5%;
 	font-size: 1.4em;
@@ -84,7 +84,7 @@ h4 b {
   color: white;
 }
 a {
-	color: #ffd400;
+	color: white;
 	text-decoration: none;
 }
 
@@ -105,13 +105,13 @@ ul {
 
 ul a:before,
 p a:before {
-	color: #fbfbfb;
+	color: #00dd00;
 	content: ' [ ';
 }
 
 ul a:after,
 p a:after {
-	color: #fbfbfb;
+	color: #00dd00;
 	content: ' ] ';
 }
 
