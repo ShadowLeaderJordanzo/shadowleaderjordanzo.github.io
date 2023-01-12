@@ -1,0 +1,131 @@
+    body {
+        background-color: black;
+        white-space: break-spaces
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content {
+    }
+
+    .justify {
+        text-align: justify;
+    }
+
+
+    .rowContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .columnContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image {
+        width: 15%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0.5%;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .title {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0.5%;
+        padding-right: 7%;
+    }
+    .description {
+        text-align: left;
+        justify-content: left;
+        color:white;
+        font-size: 1em;
+    }
+    .info {
+        margin: 0.5%;
+        width: 24%;
+    }
+    .info ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    /*
+    bar with 10 divs in it, each div is 10% of the width of the bar
+    */
+    .containerBar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 10%;
+        float:right;
+        background-color: black;
+    }
+
+    .bar {
+        width: 10%;
+        height: 100%;
+        border: 1px dotted white;
+        border-radius: 10px;
+        margin-right:1px;
+    }
+
+    .activeBar {
+        border: 1px solid white;
+        background-color: white;
+    }
+
+    .quarterActive {
+        background-image: linear-gradient(to right, white 25%, transparent 25%);
+        border: 1px solid white;
+    }
+
+    .halfActive {
+        background-image: linear-gradient(to right, white 50%, transparent 50%);
+        border: 1px solid white;
+    }
+
+    .thirdActive {
+        background-image: linear-gradient(to right, white 75%, transparent 50%);
+        border: 1px solid white;
+    }
+
+    .infoImage {
+        width: 25%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0.5%;
+    }
+
+    .mainInfo {
+        width: 65%;
+        color:white;
+    }
+
+
+
+    .mainInfo ul {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .mainInfo li {
+        margin: 0.1%;
+    }
