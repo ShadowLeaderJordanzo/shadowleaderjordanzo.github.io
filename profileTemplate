@@ -1,0 +1,143 @@
+
+<html>
+    <head>
+        <link rel='stylesheet' href="https://shadowleaderjordanzo.github.io/defaultTemplate.css" type="text/css">
+    </head>
+<body>
+    <div class="contentContainer">
+        <div class="content rowContainer">
+            <div class="columnContainer">
+                <img class="image"
+                    src="image left ">
+                <img class="image"
+                    src="image middle">
+                <img class="image"
+                    src="image right">
+            </div>
+        </div>
+        <div class="center content">
+            <div class="title"><h1 style="color: white">Name Here</h1></div>
+            <div class="description rowContainer">
+                <div class="info">
+                    <b>Rank</b>: <br>
+                    <b>Occupation</b>:  <br>
+                    <b>Tier</b>: <br>
+                    <b>Reiatsu Color</b>:  <br>
+                    <b>Unique Abilities</b>: <br>
+                </div>
+                <div class="info">
+                    <b>Age</b>: <br>
+                    <b>Gender</b>: <br>
+                    <b>Height</b>: <br>
+                    <b>Weight</b>:  <br>
+                    <b>Blood Type</b>: <br>
+                </div>
+                <div class="info">
+                    Each of these bars represent roughly 10
+                    <b>Zanjutsu</b>: 0-100  <div class="containerBar">
+                        <div class="bar activeBar"></div>
+                        <div class="bar quarterActive"></div>
+                        <div class="bar halfActive"></div>
+                        <div class="bar thirdActive"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div> <br>
+                    <b>Hakuda</b>: 0-100 <div class="containerBar">
+                        <div class="bar activeBar"></div>
+                        <div class="bar quarterActive"></div>
+                        <div class="bar halfActive"></div>
+                        <div class="bar thirdActive"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div> <br> 
+                    <b>Hoho</b>: 0-100 <div class="containerBar">
+                        <div class="bar activeBar"></div>
+                        <div class="bar quarterActive"></div>
+                        <div class="bar halfActive"></div>
+                        <div class="bar thirdActive"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div> <br>
+                    <b>Kido</b>: 0 <div class="containerBar">
+                        <div class="bar activeBar"></div>
+                        <div class="bar quarterActive"></div>
+                        <div class="bar halfActive"></div>
+                        <div class="bar thirdActive"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div> <br>
+                    <b>Bakudo/Hado</b>: None <br>
+                </div>
+                <div class="info">
+                    <b>Zanpakutou</b>: Unknown<br>
+                    <b>Shikai</b>: None <br>
+                    <b>Bankai</b>: None  <br>
+                    <b>Shikai Abilities</b>: None  <br>
+                    <b>Bankai Abilities</b>: None  <br>
+                </div>
+            </div>
+            <div class="title"><h1 style="color: white">Public Knowledge</h1></div>
+        </div>
+        <div class="content rowContainer" style="justify-content:space-between">
+            <img class="infoImage"
+                src="left image placement">
+            <div class="mainInfo"><p>
+                [content here]
+            </p>
+                </div>
+                <div class="mainInfo justify" style="width:100%">
+                    [content that makes this image look justified]
+                </div>
+            </div>
+            <div class="title center"><h1 style="color: white">Shinigami Information</h1></div>
+        </div>
+        <div class="content rowContainer" style="justify-content:space-between">
+        <div class="mainInfo">
+            <p>
+    <b>Zanpakutou</b>
+    
+    Unknown
+                
+    <b>Shikai</b>
+    
+    None
+    
+    <b>Bankai</b>
+                
+    None
+    
+    <b>Shikai Abilities</b>
+                
+    None
+    
+    <b>Bankai Abilities</b>
+                
+    None
+    
+    <b>Techniques</b>
+    
+    None
+    
+        </p>
+    </div>
+    <img class="infoImage" src="right image here">
+        </div>
+    </div>
+</body>
+</html>
