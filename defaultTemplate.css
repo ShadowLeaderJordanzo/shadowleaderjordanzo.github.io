@@ -1,6 +1,7 @@
     body {
         background-color: black;
-        white-space: break-spaces
+        white-space: break-spaces;
+        overflow-x: hidden;
     }
 
     .center {
@@ -56,14 +57,54 @@
         font-size: 1em;
     }
     .info {
+        /* text-emphasis: 'x'; */
+        text-shadow: 0px 0px 7px #0e0278;
+        text-emphasis-color: black;
+        color: #ffffff;
+        -webkit-text-stroke: 0.15px;
+        -webkit-text-stroke-color: #000000;
         margin: 0.5%;
         width: 24%;
+        transform: skew(-10deg);
     }
     .info ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
+
+    .personal {
+        background-image: url("https://i.pinimg.com/564x/20/51/24/20512469fc521f1b3e02409a06c4378d.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+
+    .rank {
+        background-image: url("https://pbs.twimg.com/media/Ev30FV5VoAYcXGB?format=jpg&name=large");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        /* background-attachment: fixed; */
+    }
+
+    .skills {
+        background-image: url("https://i.pinimg.com/564x/ef/98/fa/ef98fa218eb2587b66141540095e11d4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+
+    .zanpakuto {
+        background-image: url("https://i.pinimg.com/564x/84/da/19/84da190e2f06ad9da188b1baeecc1a75.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-attachment: fixed; */
+    }
+
     /*
     bar with 10 divs in it, each div is 10% of the width of the bar
     */
@@ -76,7 +117,7 @@
         width: 25%;
         height: 10%;
         float:right;
-        background-color: black;
+        background-color: transparent;
     }
 
     .bar {
