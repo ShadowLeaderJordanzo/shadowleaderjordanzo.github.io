@@ -1,86 +1,367 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    overflow:hidden;
-    width:400vh;
-    height:100vh;
+  background-color: black;
+  white-space: break-spaces;
+  overflow-x: hidden;
+  font-family: fantasy;
+}
+
+.center {
+  text-align: center;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.justify {
+  text-align: justify;
+}
+
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0.5%;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+.description {
+  text-align: left;
+  justify-content: left;
+  color:white;
+  font-size: 1em;
+}
+.info {
+  /* text-emphasis: 'x'; */
+  /* text-shadow: 0px 0px 7px #000000; */
+  color: #ffffff;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: #000000;
+  margin: 1%;
+  height: 25%;
+  width: 100%;
+  font-weight:bold;
+}
+.info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.personal {
+  background-image: url("https://i.pinimg.com/564x/e2/0f/8b/e20f8b1bd8a41d841c1f19022960c5a8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.rank {
+  background-image: url("https://i.pinimg.com/564x/b3/63/37/b363372e415cda6bdadc97a1e8ffd009.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+}
+
+.skills {
+  background-image: url("https://pbs.twimg.com/media/ErWQfzSVgAAm4ee?format=jpg&name=4096x4096");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.zanpakuto {
+  background-image: url("https://i.pinimg.com/564x/8d/c8/d3/8dc8d361795b72d6ac7dc68a53ba269c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.zanpakuto a {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  padding: 5px;
+}
+.zanpakuto a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+/*
+bar with 10 divs in it, each div is 10% of the width of the bar
+*/
+.containerBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 10%;
+  float:right;
+  background-color: transparent;
+}
+
+.bar {
+  width: 10%;
+  height: 100%;
+  border: 1px dotted white;
+  border-radius: 10px;
+  margin-right:1px;
+}
+
+.activeBar {
+  border: 1px solid white;
+  background-color: white;
+}
+
+.quarterActive {
+  background-image: linear-gradient(to right, white 25%, transparent 25%);
+  border: 1px solid white;
+}
+
+.halfActive {
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  border: 1px solid white;
+}
+
+.thirdActive {
+  background-image: linear-gradient(to right, white 75%, transparent 50%);
+  border: 1px solid white;
+}
+
+.infoImage {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0.5%;
+}
+
+.mainInfo {
+  width: 65%;
+  color:white;
+}
+
+
+
+.mainInfo ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.mainInfo li {
+  margin: 0.1%;
+}
+
+
+.mainImage {
+  border: 1px solid white;
+  width:538px;
+}
+
+.image-container {
+  position: relative;
+  width: 538px;
+  /* top: 0; */
+  bottom: 35;
+}
+
+.image-container img {
+  z-index: -1;
+  width: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  /* top: 100%; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0));
+  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); */
+  z-index: -1;
+}
+
+
+
+
+
+.flex-column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.flex-row {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    height: 100%;
-    scroll-snap-align: start;
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.content {
-    width:100vw;
-    height:100vh;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.card {
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    height:100%;
-    background-color: #ddd;
-}
-
-.card img {
-    height:80%;
-    width:50%;
-}
-
-.card .image {
-    height:80%;
-    width:33%;
-    text-align: left;
-}
-
-.image img {
-    height:100%;
-    width:100%;
-}
-
-.container {
-    display:flex;
-    flex-direction:row;
-    text-align: center;
-    width:100%;
-    height:100%;
-    background-color: #ddd;
-}
-
-.textGrid {
-    display:flex;
-    flex-direction:column;
-    width:66.6%;
-    height:100%;
-    background-color: #ddd;
+.column-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .information {
-    width:100%;
-    height:33.3%;
-    background-color: #ddd;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 10px;
 }
-/* remove dots in the list and center */
-.information ul li {
-    list-style-type: none;
-    text-align: center;
+
+.information h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-/* make .container h2 centered */
+
+.water-container {
+  position: relative;
+  width:33.3%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.water-level {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  /* background: #fff; */
+  transition: height 0.5s ease-in-out;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* background-color: transparent; */
+  /* color: chocolate; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  --water-fill: 0;
+}
+
+.water-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7E3517;
+  animation: water-flow 2s infinite linear;
+  transform: translate3d(0, 0, 0);
+  animation-delay: 2s;
+  opacity:0.75;
+  background-size: 40px 40px;
+  background-image: linear-gradient(to bottom, rgb(245 44 44 / 40%) 10%, rgb(185 17 17 / 52%) 20%);
+}
+
+.water-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #0e6fb6; */
+  border-radius: 50%;
+  z-index: 1;
+}
 
 
+@keyframes water-flow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
 
+#zanN a{
+  cursor: pointer;
+}
+
+
+#zanS a{
+  cursor: pointer;
+}
+
+#zanR a{
+  cursor: pointer;
+}
