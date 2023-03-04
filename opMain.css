@@ -18,6 +18,10 @@
     margin: 10px 0;
     justify-content: space-between;
   }
+
+.row col-3 img {
+    max-width:300px;
+}
   
   .col-3 {
     flex-basis: 30%;
