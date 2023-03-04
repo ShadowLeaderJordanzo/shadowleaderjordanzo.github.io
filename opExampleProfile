@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Character Name here]</title>
+    <link rel='stylesheet' href="https://shadowleaderjordanzo.github.io/opMain.css" type="text/css">
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/305921.jpg"); /* place link for a background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .profile {
+            /* Change the background color here or anything else for that matter */ 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="row">
+                <div class="col-3">
+                    <img src="https://cdn.discordapp.com/attachments/1081042257026752573/1081707789396746393/latest.png" alt="Profile Picture">
+                </div>
+                <div class="row">
+                    <div>
+                        <h1>Monkey D. Luffy</h1>
+                        <h2>Straw Hat Pirates</h2>
+                        <p>I'm going to be King!</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <!-- star filled makes them be filled,  -->
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <p style="text-align:right;margin:0;">Legendary</p>
+                  </div>
+                  
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Combat</h2>
+                    <table>
+                        <!-- Pick one of these three, or use all of them -->
+                        <tr>
+                            <th>Martial Arts</th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>Swordsmanship</th>
+                            <td>5</td>
+                        </tr>
+                        <!-- Use all of these, variable stat is for personal fluff. Don't use these as a reason to say my X is larger than your Y!! -->
+                        <tr>
+                            <th>Endurance</th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>Agility</th>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <th>Strength</th>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <th>Eating</th>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <h2>Ability Mastery</h2>
+                    <!-- Use these if they are applicable. Unique Style could be devil leg, two sword, cp9 style  -->
+                    <table class = "smallTable">
+                        <tr>
+                            <th>Haki Focus</th>
+                            <td>Haoshoku, Busoshoku, Kenbunshoku <td>
+                        </tr>
+                        <tr>
+                            <th>Haki Mastery</th>
+                            <td>Advanced / Master / Master<td>
+                        </tr>
+                        <tr>
+                            <th>Haki Level</th>
+                            <td> 2 / 5 / 5 <td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <!-- only use this if you have a devil fruit -->
+                <div class="col-12">
+                    <h2>Devil Fruit</h2>
+                    <table class = "smallerTable">
+                        <tr>
+                            <th>Name</th>
+                            <td> Gomu Gomu no Mi</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>The Gomu Gomu no Mi is a Paramecia-type Devil Fruit that grants the user's body the properties of rubber, effectively turning them into a Rubber Human</td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td>Paramecia</td>
+                        </tr>
+                        <tr>
+                            <th>Mastery</th>
+                            <td>Master</td>
+                        </tr>
+                        <tr>
+                            <th>Awakened</th>
+                            <td>Yes, spoiler information here</td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            
+                        </tr>
+                        <tr>
+                        	<th>Gomu Gomu no Pistol</th>
+                        	<td>Luffy's signature attack; he stretches his arm back then throws a devastating punch. In other words, it is a standard straight punch, augmented with stretching. This attack can be used from short to long range.</td>
+                        </tr>
+                        <tr>
+                        	<th>Gear 2nd</th>
+                        	<td>This technique involves Luffy speeding up the blood flow in all or selected body parts, in order to provide them with more oxygen and nutrients. This makes him much faster and more powerful. The technique uses even more oxygen and energy, using up more food and causing Luffy to pant heavily.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Background</h2>
+                    <p>Born in Foosha Village, Luffy is the son of Monkey D. Dragon, the leader of the Revolutionary Army, and the grandson of the Marine hero Monkey D. Garp, and their family carries the initial and Will of D.Luffy met "Red-Haired" Shanks, who gave Luffy the very straw hat that has become Luffy's signature accessory, having gifted it to the boy as part of a promise for them to meet again someday after he became a great pirate. Growing up on Dawn Island, Luffy befriended and became sworn brothers of the late "Fire Fist" Portgas D. Ace and Revolutionary Chief-of-Staff Sabo, as well as being raised under the care of Curly Dadan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
