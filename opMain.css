@@ -19,7 +19,7 @@
     justify-content: space-between;
   }
 
-.row col-3 img {
+.row .col-3 img {
     max-width:300px;
     max-height:300px;
 }
