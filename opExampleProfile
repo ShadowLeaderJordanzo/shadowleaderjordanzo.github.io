@@ -58,10 +58,10 @@
                     <span class="star filled">&#9733;</span>
                     <span class="star filled">&#9733;</span>
                     <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star filled">&#9733;</span>
-                    <span class="star">&#9734;</span>
-                    <span class="star">&#9734;</span>
+                    <span class="star hollow">&#9733;</span>
+                    <span class="star hollow">&#9733;</span>
+                    <span class="star hollow">&#9734;</span>
+                    <span class="star hollow">&#9734;</span>
                     <p style="text-align:right;margin:0;">Legendary</p>
                   </div>
                   
