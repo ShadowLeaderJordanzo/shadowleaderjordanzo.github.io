@@ -88,7 +88,7 @@
     -webkit-text-stroke: 1px black;
     cursor: default;
   }
-.star .hollow {
+.star.hollow {
     color: rgb(138, 136, 131);
     animation: fade-in 2s forwards;
     -webkit-text-stroke: 1px black;
