@@ -1,0 +1,179 @@
+.center {
+    margin: 0;
+    height: 600px;
+    width: 500px;
+    background-color: #272727;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+body
+{
+    padding: 0;
+    background-color: #000000;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 170%;
+}
+
+hr
+{
+    background-color: #40628a;
+    height: 1px;
+}
+
+a, a:link, a:visited, a:active
+{
+    color: #ffffff;
+    text-decoration: none;
+    background: #40628a;
+    border: 1px solid #161616;
+    padding: 1px 4px 1px 4px;
+    margin: 0 2px 0 0;
+    cursor:default;
+}
+
+a:hover
+{
+    color: #40628a;
+    background: #ffffff;
+}
+
+
+.topbar {
+    background-color: #0C2B69;
+    height: 32px;
+    vertical-align: middle
+}
+
+.topbar a {
+    background: initial;
+    width: 64px;
+    margin: 0;
+    border: initial;
+    padding: initial;
+    float: right;
+    height: 100%;
+    font-weight: bold;
+}
+
+.topbar a:hover {
+    background-color: #d71526;
+}
+
+ul
+{
+    padding: 4px 0 0 10px;
+    margin: 0;
+    list-style-type: none;
+}
+
+li
+{
+    padding: 0 0 2px 0;
+}
+
+img, a img
+{
+    border-style:none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+    padding: 16px 0 8px 0;
+    color: #517087;
+}
+
+h1
+{
+    font-size: 16px;
+}
+
+h2
+{
+    font-size: 16px;
+}
+
+h3
+{
+    font-size: 14px;
+}
+
+h4
+{
+    font-size: 12px;
+}
+
+.uiWrapper
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #233E75;
+}
+
+.uiWrapper img {
+    border: 1px solid #233E75;
+    height: 50%;
+    width: 50%;
+}
+
+.uiTitle
+{
+    clear: both;
+    padding: 6px 8px 6px 8px;
+    border-bottom: 2px solid #161616;
+    background: #383838;
+    color: #98B0C3;
+    font-size: 16px;
+}
+
+.uiTitle.icon
+{
+    padding: 6px 8px 6px 42px;
+    background-position: 2px 50%;
+    background-repeat: no-repeat;
+}
+
+.uiContent
+{
+    clear: both;
+    padding: 8px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.block
+{
+    padding: 8px;
+    margin: 10px 4px 4px 4px;
+    border: 1px solid #40628a;
+    background-color: #202020;
+}
+
+.block h3
+{
+    padding: 0;
+}
+.clearBoth
+{
+    clear: both;
+}
+
+.clearLeft
+{
+    clear: left;
+}
+
+.clearRight
+{
+    clear: right;
+}
+
+.line
+{
+    width: 100%;
+    clear: both;
+}
