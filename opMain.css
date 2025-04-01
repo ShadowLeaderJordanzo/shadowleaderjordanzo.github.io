@@ -11,6 +11,45 @@ h1 {
     margin-bottom: .5rem;
 }
 
+/* Star Rating Styles */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.star {
+    font-size: 32px;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+/* Full Gold Star */
+.star.filled {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gold"><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9"/></svg>');
+}
+/* Full Gray Star */
+.star.gray {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray"><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9"/></svg>');
+}
+/* Hollow Star */
+.star.hollow {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9"/></svg>');
+}
+/* Half Gold (Left) & Half Gray (Right) Star */
+.star.halfgold {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="halfGoldGray"><stop offset="50%" stop-color="gold"/><stop offset="50%" stop-color="gray"/></linearGradient></defs><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="url(%23halfGoldGray)" stroke="white" stroke-width="0"/></svg>');
+}
+/* Half Black, Half Gray Star with White Outline */
+.star.half {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="halfColor"><stop offset="50%" stop-color="gray"/><stop offset="50%" stop-color="black"/></linearGradient></defs><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="url(%23halfColor)" stroke="gray" stroke-width="1"/></svg>');
+
+
 /* Ratings widget */
 .rate {
     display: inline-block;
@@ -135,18 +174,7 @@ label:hover ~ input:checked ~ label /* highlight previous selected stars */ { co
     color: #ddd;
   }
   
-  .star.filled {
-    color: rgb(255, 247, 19);
-    animation: fade-in 2s forwards;
-    -webkit-text-stroke: 1px black;
-    cursor: default;
-  }
-.star.hollow {
-    color: rgb(138, 136, 131);
-    animation: fade-in 2s forwards;
-    -webkit-text-stroke: 1px black;
-    cursor: default;
-}
+
     @keyframes fade-in {
         from {
             opacity: 0;
