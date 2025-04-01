@@ -48,7 +48,7 @@ h1 {
 /* Half Black, Half Gray Star with White Outline */
 .star.half {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="halfColor"><stop offset="50%" stop-color="gray"/><stop offset="50%" stop-color="black"/></linearGradient></defs><polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" fill="url(%23halfColor)" stroke="gray" stroke-width="1"/></svg>');
-
+}
 
 /* Ratings widget */
 .rate {
