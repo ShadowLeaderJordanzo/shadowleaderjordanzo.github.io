@@ -1,5 +1,15 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+@font-face {
+  font-family: 'anime_aceregular';
+  src: url('Fonts/animeace.woff2') format('woff2'),
+       url('Fonts/animeace.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 body {
     margin: 5%; 
     text-align: center;
