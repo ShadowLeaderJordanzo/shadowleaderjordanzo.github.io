@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+
+
+<body>
+
+    <div id ="wrapper">
+        <h1>Shonen Showdown</h1>
+        <div id="'wrapperButtons">
+            Number of Characters to Roll:
+            <input type="number" id="rollCount" name="Roll Count" min="1" max="10" value="1" step="1">
+
+            <button onclick="rollCharacter()">Roll Character</button>
+            <button onclick="rollCharacter(true)">Skip</button>
+            <button onclick="resetTeams()">Reset</button>
+        </div>
+            <div id="currentCharacter">
+        </div>
+        <div class="teams">
+            <div class="team" id ="team1">
+                <h2><input type="text" placeholder="Player 1 Name" id="player1"></h2>
+                <ul class="teamList" id = "team1List">
+                    <li id="Captain1">
+                        <center>
+                            <button onclick="assignToTeam('Captain',1)">
+                                Captain
+                            </button>
+                        </center>
+                        <div>
+                            <img src="https://placehold.co/300x300.png">
+                        </div>
+                    </li>
+                    <li id="Vice-Captain1"><center><button onclick="assignToTeam('Vice-Captain',1)">Vice-Captain</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Tank1"><center><button onclick="assignToTeam('Tank',1)">Tank</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Healer1"><center><button onclick="assignToTeam('Healer',1)">Healer</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Support11"><center><button onclick="assignToTeam('Support1',1)">Support</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Support21"><center><button onclick="assignToTeam('Support2',1)">Support</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                </ul>
+            </div>
+            <div class="team" id ="team2">
+                <h2><input type="text" placeholder="Player 2 Name" id="player2"></h2>
+                <ul class="teamList" id = "team2List">
+                    <li id="Captain2"><center><button onclick="assignToTeam('Captain',2)">Captain</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Vice-Captain2"><center><button onclick="assignToTeam('Vice-Captain',2)">Vice-Captain</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Tank2"><center><button onclick="assignToTeam('Tank',2)">Tank</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Healer2"><center><button onclick="assignToTeam('Healer',2)">Healer</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Support21"><center><button onclick="assignToTeam('Support1',2)">Support</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                    <li id="Support22"><center><button onclick="assignToTeam('Support2',2)">Support</button></center><div><img src="https://placehold.co/300x300.png"></div></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+
+</html>

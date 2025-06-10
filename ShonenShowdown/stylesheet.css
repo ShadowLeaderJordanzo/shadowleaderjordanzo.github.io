@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentCharacter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#currentCharacter div {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#currentCharacter div img {
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.teams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 95%;
+    align-items: center;
+}
+
+.teams ul {
+    list-style-type: none;
+}
+
+.team {
+    width:50%;
+    justify-items: center;
+}
+
+.teamList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.teamList img {
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+}
