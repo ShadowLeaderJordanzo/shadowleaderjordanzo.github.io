@@ -26,6 +26,15 @@ let team2 = {
     ["Support1"]:false,
     ["Support2"]:false,
 };
+
+let team1tracker = []
+let team2tracker = []
+
+let pickedCharacter = 0
+let lastTeamLength = 0
+
+
+
 let currentTeam = 0
 async function populate() {
     const requestURL =
@@ -55,8 +64,53 @@ function resetTeams() {
     };
     currentCharacter = null;
     currentTeam = 0;
-    updateTeamDisplay(1);
-    updateTeamDisplay(2);
+    lastTeamLength = 0;
+    team1tracker = [];
+    team2tracker = [];
+    for (const key in team1) {
+        if (Object.prototype.hasOwnProperty.call(team1, key)) {
+            const element = team1[key];
+            let ele = document.getElementById(`${key}1`)
+            if(ele) {
+                ele.innerHTML = `
+                    <li>
+                        <center>
+                            <button onclick="assignToTeam('${key}',1)">
+                                ${key}
+                            </button>
+                        </center>
+                        <div>
+                            <a href=''><img src="https://placehold.co/300x300.png"></a>
+                        </div>
+                        <center>
+                        <p></p>
+                        </center>
+                    </li>`
+            }
+        }
+    }
+    for (const key in team2) {
+        if (Object.prototype.hasOwnProperty.call(team2, key)) {
+            const element = team2[key];
+            let ele = document.getElementById(`${key}2`)
+            if(ele) {
+                ele.innerHTML = `
+                    <li>
+                        <center>
+                            <button onclick="assignToTeam('${key}',2)">
+                                ${key}
+                            </button>
+                        </center>
+                        <div>
+                            <a href=''><img src="https://placehold.co/300x300.png"></a>
+                        </div>
+                        <center>
+                        <p></p>
+                        </center>
+                    </li>`
+            }
+        }
+    }
 
 }
 
@@ -73,7 +127,10 @@ async function getImage(title) {
             for (const pageId in pages) {
                 const page = pages[pageId];
                 if (page.thumbnail && page.thumbnail.source) {
-                    return page.thumbnail.source;
+                    let start = page.thumbnail.source.indexOf("/revision")
+                    let newLink = page.thumbnail.source.slice(0, start)
+                    
+                    return newLink;
                 }
             }
 
@@ -91,10 +148,22 @@ async function rollCharacter(doNotSwap) {
     let chars = []
     let index = 1
     let rolls = document.getElementById('rollCount').value
+
     if(currentTeam == 0) {
         currentTeam = 1
         doNotSwap = true
+    } else if(!doNotSwap) {
+        if(currentTeam == 1) {
+            if(lastTeamLength==team1tracker.length) return;
+        } else {
+            if(lastTeamLength==team2tracker.length) return;
+        }
     }
+
+
+
+
+
     Array.from(document.getElementById("currentCharacter").children).forEach(element => {
         if(index > rolls) {
             element.remove()
@@ -137,19 +206,30 @@ async function rollCharacter(doNotSwap) {
 
     }
     if(!doNotSwap) {
-        let div = document.getElementById(`team${currentTeam}`);
-        div.style.backgroundColor = "black";
+        let div = document.getElementById(`player${currentTeam}`);
+        div.style.backgroundColor = "white";
         currentTeam = currentTeam === 1 ? 2 : 1;
     }
-    document.getElementById(`team${currentTeam}`).style.backgroundColor = "yellow";
+    if (currentTeam == 1) {
+        lastTeamLength = team1tracker.length
+    } else {
+        lastTeamLength = team2tracker.length
+    }
+    document.getElementById(`player${currentTeam}`).style.backgroundColor = "yellow";
 }
 
 
 async function pickCharacter(theChar) {
     let char = allCharacter[theChar]
-    let img = await getImage(currentCharacter.url);
-    currentCharacter = {char, img}
-    console.log(theChar)
+    let img = await getImage(char.url);
+    if(currentCharacter) {
+        let c = currentCharacter.char
+        let i  = currentCharacter.img
+        allCharacter[currentCharacter.index] = {c,i}
+    } else {
+        allCharacter.splice(theChar)
+    }
+    currentCharacter = {char, img, theChar}
 }
 
 function assignToTeam(position, teamNumber) {
@@ -158,14 +238,16 @@ function assignToTeam(position, teamNumber) {
     if(teamNumber == 1) {
         if(team1[position] != false) return;
         team1[position] = currentCharacter;
+        team1tracker.push(currentCharacter)
         updateTeamDisplay(1);
 
     } else {
         if(team2[position] != false) return;
         team2[position] = currentCharacter;
+        team2tracker.push(currentCharacter)
         updateTeamDisplay(2);
     }
-    currentCharacter = false;
+    currentCharacter = null;
     rollCharacter();
 }
 
@@ -177,19 +259,18 @@ function assignToTeam(position, teamNumber) {
 
 
 function updateTeamDisplay(teamNumber) {
-    const list = document.getElementById(`team${teamNumber}List`);
     if(teamNumber == 1) {
         for (const key in team1) {
             if (Object.prototype.hasOwnProperty.call(team1, key)) {
                 const element = team1[key];
-                let ele = document.getElementById(`${key}${teamNumber}`)
-                if(element == false) return;
-                if(ele) {
+                let ele = document.getElementById(`${key}1`)
+                if(element == false) continue;
+                if(ele && element) {
                     ele.innerHTML = `
                         <li>
                             <center>
                                 <button onclick="assignToTeam('${key}',1)">
-                                    Captain
+                                    ${key}
                                 </button>
                             </center>
                             <div>
@@ -206,14 +287,14 @@ function updateTeamDisplay(teamNumber) {
         for (const key in team2) {
             if (Object.prototype.hasOwnProperty.call(team2, key)) {
                 const element = team2[key];
-                let ele = document.getElementById(`${key}${teamNumber}`)
-                if(element == false) return;
-                if(ele) {
+                let ele = document.getElementById(`${key}2`)
+                if(element == false) continue;
+                if(ele && element) {
                     ele.innerHTML = `
                         <li>
                             <center>
                                 <button onclick="assignToTeam('${key}',2)">
-                                    Captain
+                                    ${key}
                                 </button>
                             </center>
                             <div>
