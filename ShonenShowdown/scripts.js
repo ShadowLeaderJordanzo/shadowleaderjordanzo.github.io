@@ -63,10 +63,7 @@ function resetTeams() {
         ["Support2"]:false,
     };
     Array.from(document.getElementById("currentCharacter").children).forEach(element => {
-        if(index > rolls) {
-            element.remove()
-        }
-        index++
+        element.remove()
     });
     document.getElementById(`player${currentTeam}`).style.backgroundColor = "white";
     currentCharacter = null;
