@@ -19792,16 +19792,20 @@ This creature can't block.</text>
     <name>Vibranium</name>
     <text>Indestructible
 
-{T}, Sacrifice this token: Add {C}. Spend this mana only to cast an artifact spell or activate an ability of an artifact source.</text>
+{T}: Add {C}. This mana can't be spent to cast a nonartifact spell.</text>
     <prop>
         <type>Token Artifact — Vibranium</type>
         <maintype>Artifact</maintype>
         <cmc>0</cmc>
     </prop>
     <set picURL="https://cards.scryfall.io/large/front/2/5/252ff4c7-758e-4ceb-aed1-ef15a94e245e.jpg?1781265890"
-         uuid="252ff4c7-758e-4ceb-aed1-ef15a94e245e"
-         num="31">TMSC</set>
+        uuid="252ff4c7-758e-4ceb-aed1-ef15a94e245e"
+        num="31">TMSC</set>
+    <reverse-related>Shuri's Fabricator</reverse-related>
+    <reverse-related>Vibranium Mining Mech</reverse-related>
+    <reverse-related>Dora Milaje Elite</reverse-related>
     <reverse-related>The Great Mound</reverse-related>
+    <reverse-related>T'Challa, the Black Panther</reverse-related>
     <token>1</token>
     <tablerow>1</tablerow>
 </card>
