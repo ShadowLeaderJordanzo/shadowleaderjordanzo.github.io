@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    height: 100%;
+}
+@keyframes animateBackground {
+    from {
+        background-position: 960px 960px;
+    }
+    to {
+        background-position: 960px -960px;
+    }
+}
+@keyframes moveOut {
+    from {
+        left:0%;
+        
+    } to {
+        left:175%;
+        
+    }
+}
+@keyframes moveIn {
+    from {
+        left:-175%;
+        
+    } to {
+        left:0%;
+        
+    }
+}
+
+
+.gradient {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(179deg, rgba(125, 70, 234, 0.26), rgba(87, 39, 183, 0.1) 100%);
+    z-index: -1;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace ;
+    line-height: 1.2;
+    overflow:hidden;
+    height:100vh;
+}
+
+
+.navbar {
+    position: fixed;
+    color: #000000;
+    height: 5vh;
+    width:100%;
+    top: 0;
+    z-index: 1;
+    display:flex;
+    padding: top 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+.navbar ul li {
+    margin: 0 5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+.navbar ul li a:hover {
+    background-color: #000000;
+
+}
+
+.navbar .selected {
+    border:#000000;
+}
+
+a:hover {
+    color:#EFC88B;
+    background-color: #000000;
+}
+
+.navbar .flex {
+    justify-content:center;
+}
+
+.container {
+    width:100%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+}
+
+.content {
+    width:100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    margin-top:5vh;
+}
+
+#what {
+    background-color: #d44949;
+}
+
+
+.content section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:100vh;
+    scroll-snap-align: center;
+    padding-top: 5vh;
+}
+
+
+.left_to_right_inside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.centered_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.max_height {
+    height:93vh;
+    width:33vw;
+    align-content:center;
+}
+
+
+.display_info {
+    height:auto;
+    width:auto
+}
+
+.display_info img {
+    max-height: 50vh;
+}
+
+.portfolioContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top:0.5rem;
+    width:55%;
+}
+
+.information {
+    height:auto;
+    width:55%;
+    margin:auto;
+    background-color:#EFC88B;
+    border:#000000 1px solid;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+.information h1 {
+    margin:auto;
+    font-size:1.5rem;
+    padding: 0.1rem;
+}
+
+.lead {
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+#videoContainer {
+    width:55%;
+    height:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#myiframe {
+    width:100%;
+    height:100%;
+    border:#EFC88B 3px solid;
+    border-radius:3px;
+    position: relative;
+}
+
+.arrowContainer {
+    width:100%;
+    height:5%;
+}
+
+.arrow {
+    padding:0.5rem;
+}
+
+.arrow a {
+    color:#EFC88B;
+}
+.arrow a:hover {
+    color:#836e4b;
+    background-color: transparent;
+}
+#Backwards {
+    left: 0;
+}
+
+
+#Forwards {
+    right: 0;
+
+}
+
+
+@media only screen and (max-width: 1395px) {
+
+}
+@media only screen and (max-width: 1100px) {
+}
+@media only screen and (max-width: 845px) {
+    .lead {
+        font-size:0.75rem;
+    }
+    .navbar ul li {
+        margin: 0 0.2rem;
+        padding: 0.2rem;
+    }
+    .navbar ul li a {
+        margin: 0 0.2rem;
+        padding: 0.2rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .lead {
+        font-size:0.7rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .lead {
+        font-size:0.70rem;
+        padding: 0.4rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
